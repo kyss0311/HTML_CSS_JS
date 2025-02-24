@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>來福學flex</title>
+    <link rel="stylesheet" href="flex_animation.css">
+    <style>
+        .container1{
+            display: flex;
+            width: 500px;
+        }
+        .item{
+            /* flex-grow: 會將空間平均分配給所有項目 */
+            /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 1; */
+
+            flex: 1 1 1;
+            width: 100px;
+        }
+
+        .item:nth-of-type(7){
+            flex-shrink: 5;
+        }
+    </style>
+</head>
+<body>
+    <!--flex-->
+    <div class="container" >
+        <div class="box1">區塊1</div>
+        <div class="box2">區塊2</div>
+        <div class="box3">區塊3</div>
+        <div class="box1">區塊4</div>
+        <div class="box2">區塊5</div>
+        <div class="box3">區塊6</div>
+        <div class="box1">區塊7</div>
+        <div class="box2">區塊8</div>
+        <div class="box3">區塊9</div>
+    </div>
+
+    <br><br><br><br>
+    <div class="container1" >
+        <div class="item">區塊1</div>
+        <div class="item">區塊2</div>
+        <div class="item">區塊3</div>
+        <div class="item">區塊4</div>
+        <div class="item">區塊5</div>
+        <div class="item">區塊6</div>
+        <div class="item">區塊7</div>
+        <div class="item">區塊8</div>
+        <div class="item">區塊9</div>
+    </div>
+   
+
+
+    <!-- animation -->
+    <h1>animation 動畫</h1>
+    <div class="box box-animation"></div>
+    
+    <!-- 
+    @keyframes change-color{
+    from{background-color: red;}
+    to{background-color: blue;}
+    
+
+    0%{background-color: red;}
+    20%{background-color: blue;}
+    40%{background-color: red;}
+    60%{background-color: blue;}
+    80%{background-color: red;}
+    100%{background-color: blue;}
+    }
+    @keyframes 名稱{
+    from{狀態1}
+    to{狀態1}
+    從狀態1到狀態2
+
+    0%{background-color: red;}
+    20%{background-color: blue;}
+    40%{background-color: red;}
+    60%{background-color: blue;}
+    80%{background-color: red;}
+    100%{background-color: blue;}
+    設定動畫時間的%去職行動化
+    }
+
+    animation-name: 動畫名稱
+    animation-duration: 持續時間
+    animation-iteration-count:動畫跑的次數
+    animation-delay: 載入網頁多久會開始動畫
+    -->
+</body>
+</html>

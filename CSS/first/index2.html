@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 浮動排版</title>
+    <style>
+        img{
+            float: inline-end;
+        }
+        .container2{
+            height: 100hv;
+            border: 1px solid blue;
+            /* position: relative; */
+        }
+
+
+        .item{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        .item1{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .item5{
+            /* position:absolute; */
+            width: 20px;
+            height: 30px;
+        }
+
+        .item3{
+            position: sticky;
+            top: 60px;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-bottom: 30px;
+            border: 1px solid black;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        /*background 介紹*/
+        body{
+            background-image: url(./image/brids.jpg);
+            color: azure;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    </style>
+    <script src="https://kit.fontawesome.com/63ae29187f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="./image/apple1.png" alt="apple1" width="100px" height="100px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro quibusdam aut pariatur quas fugit dignissimos impedit, provident ad earum sint, alias reprehenderit hic minima doloribus deserunt laboriosam obcaecati excepturi.</p>
+    <img src="./image/apple2.jpg" alt="apple2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro quibusdam aut pariatur quas fugit dignissimos impedit, provident ad earum sint, alias reprehenderit hic minima doloribus deserunt laboriosam obcaecati excepturi.</p>
+    <img src="./image/apple3.jpg" alt="apple3">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro quibusdam aut pariatur quas fugit dignissimos impedit, provident ad earum sint, alias reprehenderit hic minima doloribus deserunt laboriosam obcaecati excepturi.</p>
+
+    <h1>position</h1>
+
+    <div class="container2">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+        <div class="item item10">10</div>
+    </div>
+
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+
+    <div class="icons">
+
+        <a href=""><i class="fa-sharp fa-solid fa-house fa-2xl"></i></a>
+        
+        <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #B197FC;"></i></a>
+        <br><br><br>
+        <a href="https://fontawesome.com/v6/search?o=r&m=free" target="_blank" style="color: azure ;">更多圖案</a>
+        
+    </div>
+
+</body>
+</html>

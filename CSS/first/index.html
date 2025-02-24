@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>來福網頁2.0</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet"> -->
+    <style>
+        @font-face {
+            font-family: Bungee;
+            src: url(./font/Bungee-Regular.ttf);
+        }
+        /* @font-face 可引用資料夾中的字體
+        font-family 可修改字體
+        font-weight: bold; 修改字體粗細
+        font-style: italic; 斜體字 */
+
+        h1{
+            font-family: cursive,sans-serif;
+            font-weight: bold;
+        }
+        header p{
+            font-family: "Bungee", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* 
+            border-style: dotted;
+            border-width: 2px;
+            border-color: blue; */
+            
+            border-radius: 20px;
+            border: dotted 3px blue; 
+        }
+
+        #borders{
+            border-top: 2px solid gray;
+            border-bottom: 5px dashed green;
+            border-right: 2px dotted black;
+            border-left: 9px solid yellow;
+        }
+
+        h2{
+            text-shadow:  2px      10px     3px    blueviolet ;
+            /*           水平位移  垂直位移 模糊程度    陰影顏色   */
+
+        }
+
+        #box1{
+            box-shadow: 2px      5px     3px    blueviolet;
+            /*           水平位移  垂直位移 模糊程度    陰影顏色   */
+            margin: 20px 30px 40px 20px;
+            /*        上  右   下    左 */
+        }
+
+        #p1{
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid green;
+        }
+ 
+        #box2{
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+            /* 
+            margin: auto; 設定在畫面正中央
+            margin: 10px auto; 上下10px 左右致中
+            */
+            overflow: auto;
+            /*
+            overflow: visible/hidden/clip/scroll/auto
+            */
+        }
+
+        span{
+            /* height: 50px;
+            width: 50px;
+            display: inline-block;  */
+            /*同時有inline跟block的效果 還可以設定高度寬度*/
+        }
+
+       
+        .container{
+            background-color: gray;
+            height: 500px;
+            /*100hv會布滿畫面*/
+        }
+        .box{
+            min-width: 25%;
+            max-width: 50%;
+            height: 100px;
+            border: 3px solid black;
+            float: left;
+        }
+
+        *{
+            box-sizing: border-box;
+            /*加上這行就會忽略邊界的寬度*/
+        }
+
+        a{
+            text-decoration:underline;
+        }
+
+        body{
+            background-image: url(./image/brids.jpg);
+            color: azure;
+        }
+
+        a:link{
+            color: aqua;
+        }
+
+        a:visited{
+            /*造訪過的連結*/
+            color: blueviolet;
+        }
+        a:hover{
+            /*滑鼠碰到的連結*/
+            color: greenyellow;
+        }
+        a:active{
+            /* 點擊的連結 */
+            color: red;
+        }
+
+        p::first-line{
+            color: crimson;
+        }
+
+        p::selection{
+            /* 選取時背景白色 字黑色 */
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        #fruit li:before{
+            content: "[水果]";
+        }
+
+        #apple:after{
+            content: "[apple]";
+        }
+
+        #fruit li::marker{
+            /* 改變前面標記方式 */
+            content: "o";
+        }
+        
+       
+    </style>
+    
+
+</head>
+<body>
+    <a href="https://fonts.google.com/" target="_blank">尋找更多字體</a>
+    <br>
+    <a href="index2.html" target="_blank">下一篇</a>
+    <header>
+        <h1>css 入門語法</h1>
+        <p>段落1</p>
+    </header>
+    <p id="borders">另一個段落</p>
+    <p id="borders">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus pariatur veritatis dolorem dignissimos assumenda culpa, enim temporibus distinctio nobis earum officiis qui quis dolor laudantium deleniti id obcaecati vel ut!</p>
+    
+    
+    <!-- 文字陰影 box -->
+    <h2>第二段文字陰影 box</h2>
+    <div id="box1">
+        box1    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magni placeat omnis, ut unde quod quasi deleniti, debitis amet ex illo voluptates corporis nostrum! Necessitatibus maiores nulla eius corporis sit?
+    </div>
+    <p>overflow</p>
+    <div id="box2">
+        box2    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magni placeat omnis, ut unde quod quasi deleniti, debitis amet ex illo voluptates corporis nostrum! Necessitatibus maiores nulla eius corporis sit?
+    </div>
+
+ 
+
+    <h1>margin</h1>
+    <p id="p1">
+        段落一 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit a alias error tenetur est possimus, ad eos optio eius soluta praesentium natus inventore quia blanditiis, obcaecati esse qui? Quas, neque.
+    </p>
+    <p id="p2">
+        段落二 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi quae doloribus ex blanditiis, eligendi animi quaerat corporis veritatis neque. Repudiandae atque perferendis dolor iste sed magnam velit nemo distinctio.
+    </p>
+
+
+
+    <h1>display</h1>
+    <div>div1(block)</div>
+    <span>span1</span>
+    <span>span2</span>
+    <span>span3</span>
+    <span>span4</span>
+    <span>span5</span>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cumque, harum fugiat perspiciatis saepe corporis inventore expedita, ipsum perferendis reiciendis repellendus vero repudiandae quisquam nesciunt, quibusdam magni asperiores alias. Pariatur!</p>
+
+
+    <h1> 高度寬度</h1>
+    <div class="container">
+        <div class="box">第一個 box</div>
+        <div class="box">第二個 box</div>
+        <div class="box">第三個 box</div>
+        <div class="box">第四個 box</div>
+    </div>
+
+
+    <ul id="fruit">
+        <li id="apple">蘋果</li>
+        <li id="banana">香蕉</li>
+        <li id="orange">橘子</li>
+    </ul>
+    
+
+
+</body>
+</html>

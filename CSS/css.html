@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>來福的css</title>
+        <link rel="stylesheet" href="classid.css">
+        <style>
+            p{
+                color: green;
+            }
+            h1{
+                color:green;
+            }
+        </style>
+        <!--給後面的p標籤加上紅色-->
+    </head>
+
+    <body>
+        <div style="color: red; font-size: 30px;">
+            
+            <!--style 美化 font-size 可決定文字大小 px為相素-->
+            <!--當內外層屬性重複時 內層會覆蓋外層-->
+            <h1>123</h1>
+            <h2>456</h2>
+            <h1 style="color: blue;">css教學</h1>
+            <p style="background-color: rgb(222, 251, 126); border: 2px solid black;  max-width: 600px;;">段落</p>
+            <a href="css2.html" target="_blank" style="color: black;">padding and margin排版 position and oppacity and border-radius</a>
+            <!-- 
+            border:大小 樣式(solid是實線 dashed是虛線) 顏色
+            max-width最大寬度 
+            -->
+            <br>
+            <a href="css3.html" target="_blank">float and display排版</a>
+            <br>
+            <a href="flex_animation.html" target="_blank">flex-animation</a>
+            <br>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">找更多顏色</a>
+        </div>
+        </p>
+        <p>加油</p>
+        <p style="color: blue;">努力</p>
+        <!--style沒有寫時會以head裡面的style形式呈現-->
+        <p>拉屎要用力</p>
+        <br><br><br>
+
+        <h2 id="css-h1">class & id</h2>
+        
+        <p class="abc bg">a</p>
+        <p class="abc">b</p>
+        <p class="abc">c</p>
+        <p class="num">1</p>
+        <p class="num bg">2</p>
+        <p class="num">3</p>
+        <!--
+        class類別 可以套用多個類別
+        在css檔案裡使用.名稱{}
+
+        id有唯一性
+        在css檔案裡使用#名稱{}
+
+        *{}會套用在全部程式碼
+
+        div a{}會找程式裡的div裡面的a
+
+        [xxx屬性]{}會套用在有xxx屬性上 
+
+        h1:hover{} 當滑鼠滑過h1標籤時
+        -->
+        
+    </body>
+
+</html>

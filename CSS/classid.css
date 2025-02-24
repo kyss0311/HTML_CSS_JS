@@ -1,0 +1,30 @@
+
+
+.num{
+    color: aqua;
+}
+.bg{
+    background-color: chartreuse;
+}
+
+#css-h1, .abc{
+    color: brown;
+    background-color:burlywood ;
+}
+
+*{
+    background-color: aquamarine;
+}
+
+div a{
+    background-color: blue;
+}
+
+[target]{
+    color: crimson;
+}
+
+p:hover{
+    background-color: black;
+}
+                    

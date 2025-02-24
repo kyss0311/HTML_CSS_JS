@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>psdding and margin and position</title>
+    </head>
+    <body>
+        <ul style="float: left; background-color: aqua;">
+            <li><a href="#psdding and margin">padding and margin</a></li>
+            <li><a href="#position">position</a></li>
+            <li><a href="#oppacity and border-radius">oppacity and border-radius</a></li>
+        </ul>
+        <br><br><br><br>
+
+
+        <h1 id="psdding and margin">psdding and margin</h1>
+        <div style="padding-top: 20px;margin: 20px 30px 40px 50px; background-color: blanchedalmond; border: 2px solid black; max-width:200px ;" >
+            <!--
+            padding 內部空間 padding-top只要上面有 同理 left/right/bottom mafgin也可
+            margin 外部空間  寫四個數字會按順序從上順時鐘 margin數值可為負 padding不可
+            -->
+            我是來福
+        </div>
+
+
+        <h1 id="position">position</h1>
+        <div style=" width: 80px; height: 80px; background-color: rgb(81, 6, 6);"></div>
+        <div style="position: fixed; bottom: 20px;right: 20px; width: 80px; height: 80px; background-color: brown;"></div>
+        <div style="position: relative; bottom: 20px;right: 20px; width: 80px; height: 80px; background-color: rgb(162, 115, 115);"></div>
+        <div style="width: 120px; height: 120px; background-color: blue;"></div>
+        <!--
+        fixed為固定定位 會將該物體固定在螢幕上不會隨著畫面移動而移動
+        加上 top/bottom/left/right:20px 選擇固定的位置
+        relative為先對定位 位置的偏移
+        -->
+        <div style="padding: 30px; border: 5px solid yellow; ">
+            <div style="position: relative ; right: 20px; padding: 30px; border: 5px solid yellow; ">
+                <div style="width: 40px; height: 40px; background-color: gray;"></div>
+                <div style="position: absolute; right: 0px; width: 40px; height: 40px; background-color: green;"></div>
+            </div>
+        </div>
+        <!-- 
+        灰色方塊沒有加absolute絕對定位 所以方面兩個黃色方格會因為繞過他
+        綠色方格有家絕對定位 所以黃色方格無視她
+        absolute後方也可加top/bottom/left/right
+        若絕對定位外層也有加定位時 他會隨著外層定位而定位
+         -->
+
+
+        <h1 id="oppacity and border-radius">oppacity and border-radius</h1>
+        <p style="position: relative;top: 65px;left: 25px;">你好</p>
+        <div style="opacity:0.7 ;border-radius:20px ; width: 80px;height: 80px;background-color: blueviolet;"></div>
+        <div style="opacity:0.7 ;border-radius:20px 30px 0px 40px; width: 80px;height: 80px;background-color: rgb(5, 86, 87);"></div>
+        <!-- 
+        透明度opacity:範圍0~1 0為完全透明
+        邊緣圓弧border-radius:給一個值會一次改變四個角 四個值會依序從左上角順時針改
+        -->
+
+
+    </body>
+</html>

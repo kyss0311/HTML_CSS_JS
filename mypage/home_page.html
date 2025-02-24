@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>來福自我介紹</title>
+    <style>
+        body{
+            background-image: url(./image/fruit.jpg);
+            color: rgb(0, 0, 0);
+            background-position: center;
+            background-size:contain;
+            backdrop-filter: blur(2px);
+        }
+        header{
+            height: 80px;           
+        }
+        #title{       
+            font-weight: bold;   
+            font-size: 32px;
+            margin: 0;
+        }
+        .item{
+            
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+        .item a{
+            margin: auto;
+            background-color: black;
+            color: antiquewhite;
+            width: 34%;
+            text-decoration: none;
+            text-align: center;
+            
+        }
+        #mid{
+            display: flex;
+            flex-direction: row;
+            height: 75vh;
+
+        }
+
+        .table{
+            flex: 1;
+            border: 1px solid;          
+        }
+
+        .table a{
+            text-decoration: none; 
+            color: black;
+        }
+
+        .content{
+            flex: 3;
+            border: 1px solid black;
+            overflow: auto; 
+        }
+
+        .workout1{
+            border: 1px solid black;
+            min-width: 40vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .workout2{
+            flex: 1; 
+            border-right: 1px solid black;
+        }
+
+        .right{
+            flex: 1;
+            border: 1px solid;
+        }
+        
+       
+
+
+        footer{
+            background-color: white;
+            border: 10px solid rgb(79, 78, 78);
+            height: 10vh;
+        }
+
+        h1{
+            text-shadow:  2px      5px     3px    gray ;
+        }
+        
+        *{
+            box-sizing: border-box;
+            /*加上這行就會忽略邊界的寬度*/
+        }
+/* 
+        @media  screen and (min-width:600px){
+            #mid{
+                display:flex ;
+            }
+            #table{
+                flex:1;
+            }
+            #content{
+                flex: 4;
+                margin-right: 5%;
+            }
+            #right{
+                flex: 1;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <p id="title">來福學習紀錄</p>
+        <div class="item">
+            <a href="home_page.html">首頁</a>
+            <a href="learn_html.html">html-css學習心得</a>
+            <a href="workout.html">健身計畫</a>
+        </div>
+    </header>
+    <div id="mid">
+        <span class="table">
+            
+        </span>
+
+        <div class="content"></div>
+            
+
+        <span class="right"></span>
+    </div>
+    
+
+    
+
+    <footer>
+        <p>希望明年可以找到好工作</p>
+    </footer>
+</body>
+</html>

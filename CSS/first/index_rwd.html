@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: 1.2em Helvetica, Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #eee;
+        }
+
+        .wrapper{
+            max-width: 960px;
+            margin: 2em auto;
+        }
+
+        .col1,
+        .col2{
+            background-color: #fff;
+        }
+
+        @media  screen and (min-width:600px) {
+            .wrapper{
+                display: flex;
+            }
+            .col1{
+                flex: 1;
+                margin-right: 5%;
+            }
+            .col2{
+                flex: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="col1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit culpa dolorem molestias blanditiis iusto aperiam? Fugiat reiciendis ad alias! Unde blanditiis culpa iusto, deleniti id repudiandae repellendus molestiae voluptatum tenetur.</p>
+        </div>
+        <div class="col2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut earum quaerat cum deserunt, nam eius qui illo enim blanditiis. Dignissimos alias fuga quos, beatae explicabo aut et asperiores magnam neque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugiat ea culpa corporis consectetur molestiae perspiciatis fuga temporibus velit alias, est praesentium maxime! Placeat ducimus molestiae labore quae accusantium maxime.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <!-- charset是meta的屬性  UTF-8可使用中文 -->
+
+        <meta name="description" content="來福的網站，裡面很酷">
+        <!--以上標籤會讓搜尋引擎更了解網站內容 更有機會推薦到需要的人-->
+
+        <meta name="author" content="來福" /> <!--告訴搜尋引擎作者-->
+        <meta name="keywords" content="來福,html" />  <!--告訴搜尋引擎關鍵字-->
+        <mate name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--根據裝置大小作等比例調整顯示-->
+
+        <title>來福的網頁</title>
+
+        <style>
+            table,tr,th,td{
+                border: 1px solid black
+            }
+        </style>
+        <!--以上為css將表格美化的內容-->
+    </head>
+    <body>
+        <a href="https://www.w3schools.com/html/default.asp">更多學習內容</a>
+        <!--基本標籤-->
+        <h2>第一篇文章</h2>
+        <p>今天<b>好 爽</b>好&nbsp;&nbsp;爽</p>
+        <br/>
+        <hr/>
+        <!--  <br/> 為換行  <hr/> 為分隔線 &nbsp;為空格 -->
+        <h1>第二篇文章</h1>
+        <p>今天<i>好爽</i>好爽</p>
+        <!-- <i>為斜體字  <b>為粗體字 -->
+
+
+        <!-- 連結&圖片 -->
+        
+        <!--因為a標籤要連結到網址 所以要給href屬性 target屬性會讓他在新頁面開啟-->
+        <a href ="page2.html" target="_blank">第二頁</a>
+        <a href ="dir/page3.html" target="_blank">第三頁</a>
+        <!-- page3在不同資料夾 所以要加 他的資料夾/page3.html -->
+
+        <a href="apple.png" target="_blank">蘋果</a>
+        <img src="https://i.pinimg.com/474x/8b/7e/61/8b7e61175dcf224990a5e26aaf5bb7e7.jpg" width="100">
+        <a href="./apple.png" width="100" height="100" alt="這是顆蘋果" target="_blank" >
+            <img src="https://i.pinimg.com/474x/8b/7e/61/8b7e61175dcf224990a5e26aaf5bb7e7.jpg" width="100">
+        </a> <!--點擊圖片時會跳轉到以上網址-->
+        <!-- 
+        img src可直接顯示圖片 width為寬 height為高 
+        如果只給 width 或 height其中一個它就會等比例縮小
+        alt屬性內的文字為圖片無法顯示時會給的文字
+        -->
+        <br>
+        <a href="mailto:kytu3525@gmail.com">寄信給來福</a>
+        <!-- mailto:信箱 會跳轉到寄信畫面-->
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h3>目錄</h3>
+        <ul>
+            <li><a href="#videos">videos</a></li>
+            <li><a href="#tables">tables</a></li>
+        </ul>
+        <!-- href="#xxx" 表示跳轉-->
+
+        <br>
+        <br>
+        <br>
+
+        <h2 id="videos">videos</h2>
+        <!--加上id可讓目錄跳轉到這-->
+
+        <!-- 影片&嵌入yt影片-->
+        <video src="video1.mp4" controls width="200">瀏覽器無法載入影片</video>
+        <!--controls屬性可控制影片撥放  中間文字為影片無法載入時會顯示的文字-->
+        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/ZWuHVJfiOE4?si=5g4_PGoA71rJyO2S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!--從yt的影片點分享 -> 嵌入 -> 複製內容來貼上即可-->
+
+        <!-- 列表 -->
+        <ul>
+            <li><a href = "https://google.com">google網站</a></li>
+            <li>fb</li>
+            <li>ig</li>
+        </ul>
+        <ol>
+            <li><a href = "https://google.com">google網站</a></li>
+            <li>fb</li>
+            <li>ig</li>
+        </ol>
+        <ol type="A">
+            <li><a href = "https://google.com">google網站</a></li>
+            <li>fb</li>
+            <li>ig</li>
+        </ol>
+        <!--ul代表列表用點點開頭 li為標籤
+        ol用數字開頭 後方加入type可決定排列開頭-->
+
+        <!-- 表格 -->
+        <h2 id="tables">表格</h2>
+        <table width="400" style="color: red;"> 
+            <!--style="color: red;" 為css的程式碼-->
+            <tr>
+                <th>日期</th>
+                <th>數學</th>
+                <th>英文</th>
+            </tr>
+            <tr>
+                <td>12/13</td>
+                <td>100</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>12/14</td>
+                <td>90</td>
+                <td>90</td>
+            </tr>
+            
+        </table>
+        <!-- table創造表格 wudth可調整寬度
+         tr為行
+         th為表格開頭
+         td為列(內容)-->
+        <hr>
+
+
+
+
+        <!-- html 容器 div & span-->
+        <div style="color: red;">
+            <!-- 在div/span容器內加入屬性 整個內容都會改變
+             所以容器是為了方便美化整理排版-->
+            <ul>
+                <li><a href = "https://google.com">google網站</a></li>
+                <li>fb</li>
+                <li>ig</li>
+            </ul>
+            <table width="400">
+                <tr>
+                    <td>日期</td>
+                    <td>數學</td>
+                    <td>英文</td>
+                </tr>
+                <tr>
+                    <td>12/13</td>
+                    <td>100</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>12/14</td>
+                    <td>90</td>
+                    <td>90</td>
+                </tr>
+                
+            </table>
+        </div>
+
+        
+
+        <hr>
+        <!--
+        span 跟 a 預設的顯示標籤為inline  
+        內容寬度多少就是多少
+        -->
+        <span>span1</span>
+        <span>span2</span>
+        <a>a</a>
+
+
+        <!--
+        div 跟 p 預設的顯示標籤為block
+        內容不管多少就是一定會佔一行
+        -->
+        <div>div1</div>
+        <div>div2</div>
+        <p>p</p>
+
+       
+        <hr>
+        <!-- html輸入標籤 -->
+        <input type="text" placeholder="請輸入帳號"/>
+        <br/>
+        <br/>
+        <input type="password" placeholder="輸入密碼"/> <!--password會遮擋內容-->
+        <br/>
+        <br/>
+        <input type="date" />
+        <br/>
+        <br/>
+        <input type="range" />
+        <br/>
+        <br/>
+        <input type="file" />
+        <br/>
+        <br/>
+        <input type="checkbox">正確</input>
+        <br/>
+        <br/>
+        <textarea>hello:</textarea>
+
+        <hr
+        <!-- 表單 -->
+        <form action="xxx.com/index.php" method="post">
+            <!--action屬性後面接伺服器/php後端-->
+            <label for="username">使用者名稱</label>
+            <input type="text" id="username">
+            <br>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">密碼</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <input type="submit" value="提交">
+        </form>
+        <!-- label為標籤 -->
+
+
+        <hr>
+
+
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>來福自我介紹</title>
+    <style>
+        body{
+            background-image: url(./image/fruit.jpg);
+            color: rgb(0, 0, 0);
+            background-position: center;
+            background-size:contain;
+            backdrop-filter: blur(2px);
+            
+        }
+        header{
+            height: 80px;           
+        }
+        #title{       
+            font-weight: bold;   
+            font-size: 32px;
+            margin: 0;
+        }
+        .item{
+            
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+        .item a{
+            margin: auto;
+            background-color: black;
+            color: antiquewhite;
+            width: 34%;
+            text-decoration: none;
+            text-align: center;
+            
+        }
+        #mid{
+            display: flex;
+            flex-direction: row;
+            height: 75vh;
+
+        }
+
+        .table{
+            flex: 1;
+            border: 1px solid;          
+        }
+
+        .table a{
+            text-decoration: none; 
+            color: black;
+        }
+
+        .content{
+            flex: 3;
+            border: 1px solid black;
+            overflow: auto; 
+        }
+
+        .workout1{
+            border: 1px solid black;
+            min-width: 40vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .workout2{
+            flex: 1; 
+            border-right: 1px solid black;
+        }
+
+        
+       
+
+
+        footer{
+            background-color: white;
+            border: 10px solid rgb(79, 78, 78);
+            height: 10vh;
+        }
+
+        h1{
+            text-shadow:  2px      5px     3px    gray ;
+        }
+        
+        *{
+            box-sizing: border-box;
+            /*加上這行就會忽略邊界的寬度*/
+        }
+/* 
+        @media  screen and (min-width:600px){
+            #mid{
+                display:flex ;
+            }
+            #table{
+                flex:1;
+            }
+            #content{
+                flex: 4;
+                margin-right: 5%;
+            }
+            #right{
+                flex: 1;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <p id="title">來福學習紀錄</p>
+        <div class="item">
+            <a href="home_page.html">首頁</a>
+            <a href="learn_html.html">html-css學習心得</a>
+            <a href="workout.html">健身計畫</a>
+        </div>
+    </header>
+    <div id="mid">
+        <span class="table">
+            <ol type="1" style="margin: 0px 0px 0px -20px;">
+                <p style="margin: 0px 0px 0px -10px;">class 1</p>
+                <li><a href="#list">列表範例</a></li>
+                <li><a href="#table">table</a></li>
+                <li><a href="#link">link</a></li>
+            </ol>
+        </span>
+
+        <div class="content">
+            <p id="list"><h1>列表範例</h1></p>
+            <ul style="margin-left: -15px;">
+                <li>外層使用ul 或 ol 加上type可改變marker</li>
+                <li>內層使用li</li>
+            </ul>
+
+            <hr>
+
+            <table class="workout">
+                <h1 id="table">table</h1>
+                <tr class="workout1" style="margin-top: -10px;">
+                    <th class="workout2">mon</th>
+                    <th class="workout2">tue</th>
+                    <th class="workout2">wed</th>
+                    <th class="workout2">thu</th>
+                    <th class="workout2">fri</th>
+                    <th class="workout2">sat</th>
+                    <th class="workout2">sun</th>
+                </tr>
+                <tr class="workout1">
+                    <td class="workout2">胸</td>
+                    <td class="workout2">背</td>
+                    <td class="workout2">休</td>
+                    <td class="workout2">腿</td>
+                    <td class="workout2">肩</td>
+                    <td class="workout2">打球</td>
+                    <td class="workout2">核心</td>
+                </tr>               
+            </table>
+
+            <hr>
+            
+            <h1 id="link">link</h1>
+            <iframe width="375" height="210" src="https://www.youtube.com/embed/Ml78vnNTBLw?si=scXcK0mHI1x_FNIn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <a href="https://www.youtube.com/embed/Ml78vnNTBLw?si=scXcK0mHI1x_FNIn" target="_blank" style="color: black; text-decoration: none; border: 1px solid black; border-radius: 5px;">也可以點這裡觀看</a>
+        </div>
+    </div>
+    
+
+    
+
+    <footer>
+        <p>希望明年可以找到好工作</p>
+    </footer>
+</body>
+</html>

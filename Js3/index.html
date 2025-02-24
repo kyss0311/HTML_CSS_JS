@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array 相關用法</title>
+</head>
+<body>
+    
+     <script>
+
+ //map()可以改變整個陣列   
+        // const array1 = ['a','b','c'];
+
+        // var result = array1.map(function(i){
+        //     return i + ' ' + i;
+        // })
+        // console.log(result);
+
+        // for(var i=0;i<array1.length;i++){
+        //     array1[i]= array1[i]+array1[i];
+        // }
+        // console.log(result);
+
+
+
+//forEach()找每一筆資料
+        // array1.forEach(function(element){
+        //     console.log(element + element);
+        // })
+
+
+// filter 過濾資料
+        // var arr = [1,2,3,4,5,6,7,8,9];
+        // new_arr = arr.filter(function(element){
+        //     return (element>3) && (element<8);
+        // })
+        // console.log(new_arr);
+
+        // var arr1 = [
+        //     {name: "aaa", age: 50},
+        //     {name: "bbb", age: 30},
+        //     {name: "ccc", age: 70},
+        //     {name: "ddd", age: 60}
+        // ]
+        // new_arr1 = arr1.filter(function(person){
+        //     return person.age < 55;
+        // })
+        // console.log(new_arr1);
+        
+//find() 找到第一筆符合的資料
+        // var arr2 = [
+        //     {name: "aaa", age: 50},
+        //     {name: "bbb", age: 30},
+        //     {name: "ccc", age: 60},
+        //     {name: "ddd", age: 60}
+        // ]
+        // let found = arr2.find(function(person){
+        //     return person.age === 60;
+        // })
+        // console.log(found);
+
+        // let filterFound = arr2.filter(function(person){
+        //     return person.age === 60;
+        // })
+        // console.log(filterFound);
+
+
+// reduce()加總陣列結果
+        // var arr3 = [1,2,3,4,5,6,7,8,9];
+        // var result = arr3.reduce(function(sum, current){
+        //     sum+=current;
+        //     return sum;
+        // },0);
+        // console.log(result);
+
+        // var count = 0;
+        // arr3.forEach(function(num){
+        //     count+=num;
+        // })
+        // console.log(count);
+        
+
+//iterator 迭代器
+        // var myString = "hello";
+        // var iterator = myString[Symbol.iterator]();
+
+        // var myArray = [1,2,3,4,5];
+        // var arrayIterator = myArray[Symbol.iterator]();
+
+// for of 用於可迭代的項目 (iterable)
+        // for(const element of myArray){
+        //         console.log(element);
+        // }
+
+        // for(let str of myString){
+        //         console.log(str);
+        // }
+// for in 
+        // var ob = {a:1, b:2, c:3};
+        // function show_props(obj , objname){
+        //         var result = "";
+
+        //         for(var prop in obj){
+        //                 result += objname+"."+prop+"="+obj[prop]+"\n";
+        //         }
+        //         return result;
+        // }
+
+        // console.log(show_props(ob,"object"));
+
+//樣板字面值
+        // let name = "kevin";
+        // let str_origin = "hello " + name;
+        // let str = `hello ${name}
+        // i love molly.`  //可以直接用變數 及斷航  
+        // console.log(str_origin);
+        // console.log(str);  
+        
+        
+//擴展運算子
+        // let arr4 = [1,2,3,4,5,6];
+        // console.log(arr4);
+        // console.log(...arr4);
+        // m = Math.min(...arr4); 
+        // console.log(m);
+
+        //結合陣列
+        // let arr5 = [5,6,7,8,9,10];
+        // var arr6 = [...arr4,...arr5];
+        // console.log(arr6);
+
+        //等同於
+        // console.log(arr4.concat(arr5));
+
+        //用於物件時重複地會被後面的取代
+        // let obj1 = {a:1,b:2,c:3};
+        // let obj2 = {c:6,d:8};
+        // let obj12= {...obj1,...obj2};
+        // console.log(obj12)
+
+
+//箭頭函式
+        const function1 = x => x+1;
+        console.log(function1(2));
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- <h1 id="title">公主好漂亮</h1>
+    <script src="script.js"></script>
+     -->
+
+    <!-- <button id="btn1" onclick="handle_click(this)">按這裡</button>
+    <button id="btn2">按這裡</button> -->
+
+
+    <!-- 部落格 -->
+    <h1>來福部落格</h1> 
+    <p>標題</p>
+    <input type="text" id="title">
+    <p>內容</p>
+    <textarea name="content" id="content" rows="8"></textarea>
+    <br>
+    <button id="bt" >發布</button>
+    <div id="list1">
+        <div class article>
+            <h2>好辣</h2>
+            <p>今天吃太辣度子好痛</p>
+        </div>
+        <hr>
+    </div>
+    <script src="script.js"></script>
+
+    <h1>代辦事項</h1>
+    <input  class="text1" placeholder="輸入一些文字">
+    <button class="btt">+</button>
+    <ul class="lists">
+
+    </ul>
+
+    
+
+    <script>
+        const text1 = document.querySelector(".text1");
+        const lists = document.querySelector(".lists");
+        const btt = document.querySelector(".btt");
+        
+        
+
+        function news(){
+            if(text1.value === ""){
+                return;
+            }
+            const newtask = document.createElement("li");
+            newtask.innerHTML = `
+                <input type = "checkbox" class = "box">
+                <label>${text1.value}</label>
+                <button class="trush">🗑️</button>
+                
+            `
+            const trush = newtask.querySelector(".trush");
+            const box = newtask.querySelector(".box")
+
+            trush.addEventListener("click",function(){
+            newtask.remove();
+            })
+
+            box.addEventListener("change",function(){
+                if(box.checked){
+                    newtask.style.textDecoration  = "line-thriugh";
+                    newtask.style.color = "#999";
+                    lists.append(newtask);
+                }
+                else{
+                    newtask.style.textDecoration  = "none";
+                    newtask.style.color = "";
+                    lists.prepend(newtask);
+                }
+            })
+            lists.append(newtask);
+            text1.value="";
+        }
+
+        btt.addEventListener("click",news)
+        
+
+        text1.addEventListener("keyup", function(e) {
+            if(e.key === "Enter"){
+                news();
+            }
+        });
+    </script>
+
+</body>
+</html>
